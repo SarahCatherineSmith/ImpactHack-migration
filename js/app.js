@@ -8,7 +8,7 @@ countriesData.features.map(val => {
     val.properties['data'] = asylum[val.properties.name];
     
 });
-console.log("For Zambia ... ", asylum['Zambia'])
+
 var selectedCountry = "";
 var map = L.map('map').setView([0.0, 0.0], 2);
 
@@ -47,56 +47,92 @@ function getColor(feature) {
            d > 0.1  ? '#dddddd' :
            d >= 0 ? '#eeeeee' :
                       '#ffffff';
-    } else if (selectedCountry == "Colombia") {
+    } else if (selectedCountry == "Somalia") {
         switch (feature.properties.name){
             case selectedCountry:
                 return "#FF0000";
-            case "Cameroon":
+            case "Kenya":
                 return "#000000";
-            case "Chad":
+            case "Ethiopia":
                 return "#000000";
-            case "Democratic Republic of the Congo":
+            case "Yemen":
                 return "#000000";
-            case "Sudan":
+            case "South Africa":
+                return "#000000";
+            case "Sweden":
                 return "#000000";
             default: 
+                return "#CCCCCC";
+        }
+    } else if (selectedCountry == "Afghanistan") {
+        switch (feature.properties.name){
+            case selectedCountry:
+                return "#FF0000";
+            case "Austria":
+                return "#000000";
+            case "Germany":
+                return "#000000";
+            case "Iran":
+                return "#000000";
+            case "Pakistan":
+                return "#000000";
+            case "Sweden":
+                return "#000000";
+            default: 
+                return "#CCCCCC";
+        }
+    } else if (selectedCountry == "Central African Republic") {
+        switch (feature.properties.name) {
+            case selectedCountry:
+                return "#FF0000";
+            case 'Cameroon':
+                return "#000000";
+            case 'Chad':
+                return "#000000";
+            case 'Democratic Republic of the Congo':
+                return "#000000";
+            case 'Sudan':
+                return "#000000";
+            case 'Sudan':
+                return "#000000";
+            default:
+                return "#CCCCCC";
+        }
+    } else if (selectedCountry == "Colombia") {
+        switch (feature.properties.name) {
+            case selectedCountry:
+                return "#FF0000";
+            case 'Canada':
+                return "#000000"
+            case 'Costa Rica':
+                return "#000000"    
+            case 'Ecuador':
+                return "#000000"    
+            case 'Panama':
+                return "#000000"    
+            case 'Venezuela':
+                return "#000000";
+            default:
                 return "#CCCCCC";
         }
     } else if (selectedCountry == "Eritrea") {
         switch (feature.properties.name) {
             case selectedCountry:
                 return "#FF0000";
-            case 'Canada':
-                return "#000000";
-            case 'Costa Rica':
-                return "#000000";
-            case 'Ecuador':
-                return "#000000";
-            case 'Panama':
-                return "#000000";
-            case 'Venezuela':
-                return "#000000";
-            default:
-                return "#CCCCCC";
+                case 'Ethiopia':
+                    return "#000000";
+                case 'Israel':
+                    return "#000000";
+                case 'Sudan':
+                    return "#000000";
+                case 'Sweden':
+                    return "#000000";
+                case 'Switzerland':
+                    return "#000000";
+                default:
+                    return "#CCCCCC";
         }
     } else if (selectedCountry == "Iraq") {
-        switch (feature.properties.name) {
-            case selectedCountry:
-                return "#FF0000";
-            case 'Ethiopia':
-                return "#000000"
-            case 'Israel':
-                return "#000000"    
-            case 'Sudan':
-                return "#000000"    
-            case 'Sweden':
-                return "#000000"    
-            case 'Switzerland':
-                return "#000000";
-            default:
-                return "#CCCCCC";
-        }
-    } else if (selectedCountry == "Somalia") {
         switch (feature.properties.name) {
             case selectedCountry:
                 return "#FF0000";
@@ -109,23 +145,6 @@ function getColor(feature) {
                 case 'Sweden':
                     return "#000000";
                 case 'Syria':
-                    return "#000000";
-                default:
-                    return "#CCCCCC";
-        }
-    } else if (selectedCountry == "Central African Republic") {
-        switch (feature.properties.name) {
-            case selectedCountry:
-                return "#FF0000";
-                case 'Austria':
-                    return "#000000";
-                case 'Germany':
-                    return "#000000";
-                case 'Iran':
-                    return "#000000";
-                case 'Pakistan':
-                    return "#000000";
-                case 'Sweden':
                     return "#000000";
                 default:
                     return "#CCCCCC";

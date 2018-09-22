@@ -23,7 +23,8 @@ var trace1 = {
 var data = [trace1];
 
 var layout = {
-  title: 'Drought 2014'
+  title: 'Drought 2014',
+  // yAxis: {title: "Drought Index for All Sectors"}
 };
 
 Plotly.newPlot('myDiv', data, layout);

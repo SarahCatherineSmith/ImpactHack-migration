@@ -4,6 +4,13 @@
 	height: 500px;
 }
 
+.video {
+	position: absolute;
+	left: 850px;
+	top: 250px;
+	width: 400px;
+}
+
 .info {
 	padding: 6px 8px;
 	font: 14px/16px Arial, Helvetica, sans-serif;

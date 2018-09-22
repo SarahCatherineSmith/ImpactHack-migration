@@ -1,5 +1,27 @@
 var countryOrigin = {
-    'Central African Republic': {
+    'Somalia': {
+        "Kenya": {
+            "Pct_to_Dest": 18.4162073,
+            "Refugees": 424691
+        },
+        "Ethiopia": {
+            "Pct_to_Dest": 10.62833251,
+            "Refugees": 245097
+        },
+        "Yemen": {
+            "Pct_to_Dest": 10.58960865,
+            "Refugees": 244204
+        },
+        "South Africa": {
+            "Pct_to_Dest": 1.740318602,
+            "Refugees": 40133
+        },
+        "Sweden": {
+            "Pct_to_Dest": 0.9188351448,
+            "Refugees": 21189
+        }
+    },
+    'Afghanistan': {
         'Austria': {
             'Pct_to_Dest': 0.32063625263314377,
             'Refugees': 11906
@@ -21,7 +43,7 @@ var countryOrigin = {
             'Refugees': 12090
         }
     },
-    'Colombia': {
+    'Central African Republic': {
         'Cameroon': {
             'Pct_to_Dest': 14.803144113707505,
             'Refugees': 220702
@@ -43,7 +65,7 @@ var countryOrigin = {
             'Refugees': 4113
         }
     },
-    'Eritrea': {
+    'Colombia': {
         'Canada': {
             'Pct_to_Dest': 0.25631944130225504,
             'Refugees': 16428
@@ -65,7 +87,7 @@ var countryOrigin = {
             'Refugees': 173519
         }
     },
-    'Iraq': {
+    'Eritrea': {
         'Ethiopia': {
             'Pct_to_Dest': 29.68469721532101,
             'Refugees': 123784
@@ -87,7 +109,7 @@ var countryOrigin = {
             'Refugees': 16091
         }
     },
-    'Somalia': {
+    'Iraq': {
         'Germany': {
             'Pct_to_Dest': 1.0027532051102488,
             'Refugees': 41167

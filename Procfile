@@ -1,1 +1,1 @@
-web: gunicorn js.app:app
+web: python -m http.server

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Layers Control Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="app.css" />	
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/queue.v1.min.js"></script>
+	<script src="http://d3js.org/topojson.v0.min.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar bg-dark">
+		<span class="text-white">Fleeing to a More Stable Environment</span>
+	</nav>
+	
+	<div class="row">
+		<div>
+			<select name="Country" id="country" onChange="changeCountry(country)">
+				<option value="">Select Country</option>
+				<option value="Eritrea">Eritrea</option>
+				<option value="Colombia">Colombia</option>
+				<option value="Iraq">Iraq</option>
+				<option value="Somalia">Somalia</option>
+				<option value="Central African Republic">Central African Republic</option>
+			</select>
+		</div>
+	</div>
+	<div class="row bg-light bg-primary">
+		<div id="map"></div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ycRszM8ATsI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="col-7" id="globe"></div>
+	</div>
+	<div class="col-8">
+		<div id="myDiv"></div>
+	</div>
+
+
+	
+
+	<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+	<!--countries source data in GeoJSON format -->
+	<!-- <script type="text/javascript" src="countries2.js"></script> -->
+	<script type="text/javascript" src="./js/country_destination.js"></script>
+	<script type="text/javascript" src="./js/percent.js"></script>
+	<script type="text/javascript" src="./js/countries.geo.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script type="text/javascript" src="./js/app_plot.js"></script>
+	
+	
+</body>
+</html>

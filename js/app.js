@@ -142,3 +142,9 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
+
+function changeCountry(country) {
+    console.log("Selected element", country);
+    console.log("Selected country name = ", country.value);
+}

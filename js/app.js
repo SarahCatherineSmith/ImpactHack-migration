@@ -156,3 +156,34 @@ function changeCountry(country) {
     console.log("Selected element", country);
     console.log("Selected country name = ", country.value);
 }
+
+
+var xValue = ['Western Sahara', 'Mauritania', 'Niger', 'Senegal', 'Oman', 'Peru', 'Egypt', 'Namibia', 'Qatar', 'Sudan'];
+
+var yValue = [4.42, 3.79, 3.72, 3.65, 3.41, 3.39, 3.35, 3.30, 2.94, 2.94];
+
+var trace1 = {
+  x: xValue, 
+  y: yValue,
+  type: 'bar',
+  text: yValue,
+  textposition: 'auto',
+  hoverinfo: 'none',
+  marker: {
+    color: 'rgb(158,202,225)',
+    opacity: 0.6,
+    line: {
+      color: 'rbg(8,48,107)',
+      width: 1.5
+    }
+  }
+};
+
+var data = [trace1];
+
+var layout = {
+  title: 'Drought 2014'
+};
+
+Plotly.newPlot('myDiv', data, layout);
+

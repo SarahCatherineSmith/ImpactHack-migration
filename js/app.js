@@ -1,7 +1,14 @@
 // Add in mock data into the countryData JSON
 countriesData.features.map(val => {
-    val.properties['data'] = Math.random()*100;
+    var value = asylum[val.properties.name];
+
+    if (typeof asylum[val.properties.name] === undefined) {
+        console.log(val.properties.name);
+    }
+    val.properties['data'] = asylum[val.properties.name];
+    
 });
+console.log("For Zambia ... ", asylum['Zambia'])
 
 var map = L.map('map').setView([0.0, 0.0], 2);
 
@@ -30,14 +37,15 @@ info.addTo(map);
 
 // get color depending on budget value
 function getColor(d) {
-    return d > 100 ? '#CCC' :
-           d > 70  ? '#AAA' :
-           d > 50  ? '#999' :
-           d > 40  ? '#777' :
-           d > 30   ? '#555' :
-           d > 20   ? '#333' :
-           d > 10  ? '#111' :
-                      '#000';
+    return d > 10 ? '#000000' :
+           d > 5  ? '#000000' :
+           d > 2  ? '#111111' :
+           d > 1  ? '#333333' :
+           d > 0.5   ? '#999999' :
+           d > 0.25   ? '#bbbbbb' :
+           d > 0.1  ? '#dddddd' :
+           d >= 0 ? '#eeeeee' :
+                      '#ffffff';
     // return d > 100000000 ? '#800026' :
     //        d > 50000000  ? '#BD0026' :
     //        d > 20000000  ? '#E31A1C' :

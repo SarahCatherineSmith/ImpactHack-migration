@@ -1,4 +1,4 @@
-#map {
+#map {      margin-top: 50px;
 			width: 800px;
 			height: 500px;
 		}
@@ -28,5 +28,23 @@
 			margin-right: 8px;
 			opacity: 0.7;
         }
-        
-        
+    
+      body{ 
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        color: black;
+        font-weight: 700;
+      }
+
+      .bg-dark{
+        background-color:  #1c313a;
+        color: white;
+      }
+
+      .bg-light{
+        background-color: #455a64;
+      }
+
+      .bg-primary{
+        background-color: #718792;
+      }
